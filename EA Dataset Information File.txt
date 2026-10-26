@@ -1,0 +1,14 @@
+Name: 9.1.3. Optical recognition of handwritten digits dataset
+
+Source: UC Irvine Machine Learning Repository
+https://archive.ics.uci.edu/dataset/80/optical+recognition+of+handwritten+digits
+
+Short Summary: Normalized bitmaps of handwritten digits. The dataset contains a total of 1797 images of handwritten digits from 0 to 9.
+
+I am utilizing the original dataset.
+
+The dataset comes built into scikit-learn, so no download is needed. It was loaded using the following code:
+
+	from sklearn.datasets import load_digits
+	numbers = load_digits()
+

@@ -9,6 +9,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_digits
 
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, confusion_matrix
+
 
 numbers = load_digits()
 x = numbers.data
@@ -53,23 +57,40 @@ print("\nNumber of identified numbers in dataset (organized from 0 to 9): ", np.
 
 print("\n")
 
-counts = np.bincount(y)
-plt.bar(range(10), counts)
-plt.title("Number of images per digit")
-plt.xlabel("Digit")
-plt.ylabel("Count")
-plt.xticks(range(10))
-plt.savefig("figures/class_counts.png")
-plt.close()
-
-
-#Visualization 1: Average Shape of Numbers (per dataset samples)
+#Visualization: Average image of each digit based on sample:
 count = 0
 while count < 10:
     plt.imshow(numbers.images[y == count].mean(axis=0), cmap="gray_r")
     plt.title(f"Average image of digit {count}")
     plt.show()
     count +=1
+
+
+
+#Base prediction model (WIP)
+print("\n\n\nPrediction Model:\n\n")
+
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.50, random_state = 10, stratify = y)
+print("\nModel's training set size: ", x_train.shape)
+print("\nModel's test set size: ", x_test.shape)
+
+model = LogisticRegression(max_iter=2000)
+model.fit(x_train, y_train)
+
+
+#comparison between predicted and true values of first 30 inputs
+i = 0
+predicted_output = model.predict(x_test)
+while i < 30:
+    print(f"For input {i}:\n")
+    print("Sample predictions: ", predicted_output[i])
+    print("Real value: ", y_test[i])
+    print("\n")
+    i += 1
+
+
+
+
 
 
 print("\n")

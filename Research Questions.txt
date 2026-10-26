@@ -1,0 +1,8 @@
+Question 1:
+Which digits often get confused with each other, and for what reason?
+
+Question 2:
+Which pixels/positions across the 8-by-8 grid are most important in discerning the digit? 
+
+Question 3:
+How does a prediction model's confidence change with objective accuracy, and are inaccurate guesses correlated with stronger-than-average confidence levels?
