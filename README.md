@@ -1,8 +1,7 @@
 ## Lab 2 Dataset: Optical Recognition of Handwritten Digits
 Final Project
 Team: Ezra A.
-
-## Type: Classification
+Type: Classification
 
 ## Research Questions 
     Question 1:
