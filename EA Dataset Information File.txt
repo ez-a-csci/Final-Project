@@ -8,7 +8,8 @@ Source: scikit-learn (UC Irvine Machine Learning Repository)
 	https://scikit-learn.org/stable/datasets/toy_dataset.html#optical-recognition-of-handwritten-digits-dataset
 
 
-Short Summary: Normalized bitmaps of handwritten digits. The dataset contains a total of 1797 images of handwritten digits from 0 to 9.
+Short Summary:
+The dataset contains a total of 1797 images of handwritten digits from 0 to 9 organized as a series of normalized bitmaps. 
 
 I am utilizing the original dataset.
 
