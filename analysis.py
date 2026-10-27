@@ -104,10 +104,10 @@ print("\nAccuracy: ", model_eval)
 print("\nConfusion: \n", confusion)
 
 #Based on a test sample of 30, my model has an accuracy of ~96%.
-#This is reflected by the confusion matrix, which shows that a majority of predictions fall along the diagnal.
+#This is reflected by the confusion matrix, which shows that a majority of predictions fall along the diagonal.
 #I hope to see improvement to at least above 98% by the time of the Final Project's end. 
 #When increasing the "size_of_test_batch" variable to 500, I still retained a 96% accuracy rate. 
-#I would like to experiment with other train-test splits beyond 50/50, and measure how they impact my accuracy rate. I'm particularly interested in figuring out what the smalest amount of training data is needed for a model that meets a 96% accuracy rate.
+#I would like to experiment with other train-test splits beyond 50/50, and measure how they impact my accuracy rate. I'm particularly interested in figuring out what the smallest amount of training data is needed for a model that meets a 96% accuracy rate.
 #For my final project, I would compare various forms of predictions models in order to find one that is both lightweight and takes a relatively small size of input training data.
 #The purpose of this would be to minimize work required to recreate a similar system for a smaller, web-based game with custom symbols rather than digits. 
 
@@ -143,7 +143,7 @@ plt.show()
 
 #The above code creates a bar graph that captures how many times model fails to correctly guess each number in the test group.
 #Interestingly, it seems that my current model has the most trouble with the digit 8.
-# Comapring this information of Visualization 1, this makes sense since the digit 8 overlaps with multiple other digits' averages.
+# Comparing this information of Visualization 1, this makes sense since the digit 8 overlaps with multiple other digits' averages.
 #I'd like to repeat this comparison with different models before drawing a final conclusions. 
 
 print("\n")
