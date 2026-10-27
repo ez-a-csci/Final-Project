@@ -1,5 +1,5 @@
 #CSCI 6201 Lab 2
-# Ezra Anteneh | ezra.anteneh@gwu.edu | G37183321
+
 #Date Last Updated: October 25, 2026
 
 #Dataset: 9.1.3. Optical recognition of handwritten digits dataset
@@ -41,3 +41,7 @@ print("image shape: \n",numbers.images.shape)
 import matplotlib.pyplot as plt
 plt.imshow(numbers.images[0], cmap="gray_r")
 plt.show()
+
+model_eval = accuracy_score(y_test, predicted_output)
+
+print("Accuracy: ", model_eval)

@@ -1,7 +1,12 @@
 Name: 9.1.3. Optical recognition of handwritten digits dataset
 
-Source: UC Irvine Machine Learning Repository
-https://archive.ics.uci.edu/dataset/80/optical+recognition+of+handwritten+digits
+
+Source: scikit-learn (UC Irvine Machine Learning Repository)
+	
+	https://archive.ics.uci.edu/dataset/80/optical+recognition+of+handwritten+digits
+	
+	https://scikit-learn.org/stable/datasets/toy_dataset.html#optical-recognition-of-handwritten-digits-dataset
+
 
 Short Summary: Normalized bitmaps of handwritten digits. The dataset contains a total of 1797 images of handwritten digits from 0 to 9.
 
