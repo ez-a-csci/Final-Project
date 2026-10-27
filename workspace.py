@@ -4,6 +4,8 @@
 
 #Dataset: 9.1.3. Optical recognition of handwritten digits dataset
 
+#This workspace is just where I practiced examining/manipulating the data.
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -41,7 +43,3 @@ print("image shape: \n",numbers.images.shape)
 import matplotlib.pyplot as plt
 plt.imshow(numbers.images[0], cmap="gray_r")
 plt.show()
-
-model_eval = accuracy_score(y_test, predicted_output)
-
-print("Accuracy: ", model_eval)
